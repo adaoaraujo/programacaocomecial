@@ -33,4 +33,4 @@ class Autenticacao(View):
 
             return render(request, 'autenticacao.html', {'mensagem': 'Usuario inativo'})
 
-        return render(request, 'autenticacao.html', {'mensagem': 'Usuario ou senha incorretos'})
+        return render(request, 'autenticacao.html', {'mensagem ': 'Usuario ou senha incorretos'})
