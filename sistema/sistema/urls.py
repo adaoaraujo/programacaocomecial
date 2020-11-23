@@ -20,6 +20,7 @@ from sistema.views import Autenticacao
 
 urlpatterns = [
     path('', Autenticacao.as_view(), name='index'),
+    
     path('admin/', admin.site.urls),
 ]
 '''

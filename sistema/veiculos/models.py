@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here. VAMOS CRIAR CARACTERISTA ESPECIFICA DE UM VEICULO
 
-class veiculos(models.Model):
+class Veiculo(models.Model):
     marca = models.CharField(max_length=100)
     modelo = models.CharField(max_length=100)
     ano_fabricacao = models.IntegerField()
