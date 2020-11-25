@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Lista de veiculos</title>
+    </head>
+    <body>
+        <ul>
+            {% for veiculo in lista_veiculos%}
+            <li>
+                    {{veiculo}}
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
