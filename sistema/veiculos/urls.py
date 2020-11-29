@@ -3,6 +3,8 @@ from veiculos import views
 
 urlpatterns = [
     path('',views.VeiculosList.as_view(), name='listar-veiculos'),
+    path('novo/',views.VeiculosNew.as_view(), name='novo-veiculo'),
+
 ]
 
 '''

@@ -29,7 +29,7 @@ class Autenticacao(View):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return HttpResponse('Usuario autenticado com sucesso')
+                return redirect('/veiculos')
 
             return render(request, 'autenticacao.html', {'mensagem': 'Usuario inativo'})
 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Cadastrar veiculos</title>
+    </head>
+    <body>
+        <form action="/veiculo/novo/"   method="post">
+            {% csrf_token %}
+            {{ form.as_ul }}
+            <input type="submit" value="Salvar" />
+            <input type="reset" value="Linpar" />
+        </form>
+    </body>
+</html>

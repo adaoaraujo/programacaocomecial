@@ -15,9 +15,9 @@ class VeiculosList(View):
 '''
 
 from django.views.generic import ListView, CreateView
-#from django.urls import reverse_lazy
+from django.urls import reverse_lazy
 from veiculos.models import Veiculo
-#from veiculos.forms import FormularioVeiculo
+from veiculos.forms import FormularioVeiculo
 
 
 class VeiculosList(ListView):
@@ -26,3 +26,9 @@ class VeiculosList(ListView):
     context_object_name = 'lista_veiculos'
     template_name = 'veiculos/listar.html'
 
+class VeiculosNew(CreateView):
+    model = Veiculo
+    form_class = FormularioVeiculo
+    template_name = 'veiculos/novo.html'
+    success_url = reverse_lazy('listar-veiculos')
+    
